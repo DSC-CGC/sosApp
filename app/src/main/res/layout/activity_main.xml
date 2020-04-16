@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/onOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="55dp"
+        android:text="Wifi On"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/onOff"
+        android:layout_alignBottom="@+id/onOff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="#fff"
+        android:text="Discover"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/readMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peerListView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="5dp"
+        android:text="Message"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/readMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:text="Alert"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="Connection Status"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/peerListView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/onOff"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/holo_orange_light"
+        android:visibility="invisible"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center_horizontal"
+
+        android:text="Your Details Has Been Sent"
+        android:textColor="#000"
+        android:textSize="36sp" />
+
+
+</RelativeLayout>
